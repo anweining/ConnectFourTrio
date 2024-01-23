@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect Four Face</title>
+    <script defer src="face-api.min.js"></script>
+    <!--<script defer src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>-->
+    <!--script defer src="script.js"></script-->
+    
+    <link rel="stylesheet" href="face4.css">
+</head>
+
+<body>
+    <nav class="nav main-nav">
+        <ul class="btn-list">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="click4.html">Connect Four Click</a></li>
+            <li><a href="voice4.html">Connect Four Voice</a></li>
+            <li><a href="face4.html">Connect Four Face</a></li>
+            <li><a href="instructions.html">Instructions</a></li>
+        </ul>
+    </nav>
+
+    <!--<div id="video"></div>-->
+    <video class="first" id="video" width="600" height="450" autoplay></video>
+    <!--<button id="btn" onclick="captureImages()">Take Snapshot</button>-->
+    <button class="first" id="btn">Take the first picture for player one</button>
+    <h1 class="first" id="instructions">To play Connect Four Facial, each player needs to take two pictures</h1>
+    
+    <!--<p id="text">Testing to see if this will move when the other things disappear</p>-->
+
+    <!--
+    <label class="second" id="countLabel">4</label>
+    <button class="second" id="decreaseBtn">Decrease</button>
+    <button class="second" id="resetBtn">Reset</button>
+    <button class="second" id="increaseBtn">Increase</button>
+    <button class="second" id="select">Select</button>
+    -->
+  
+    <h1 class="second" id="title">Connect Four Facial</h1>
+    <div class="second square nine" id="square1"></div>
+    <div class="second square nine" id="square2"></div>
+    <div class="second square nine" id="square3"></div>
+    <div class="second square nine" id="square4"></div>
+    <div class="second square nine" id="square5"></div>
+    <div class="second square nine" id="square6"></div>
+    <div class="second square nine" id="square7"></div>
+
+    <h2 class="second" id="info">Be happy to move right, sad to move left, surprised to drop. After moving left or right once, relax your face before moving again.</h2>
+    
+    <h2 class="second" id="winner"></h2>
+    <div class="second" id="board"></div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+    <script defer src="face4.js"></script>
+    <!--<button id="captureButton">Capture Images</button>-->
+
+</body>
+</html>
